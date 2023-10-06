@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Raj - Portfolio</title>
+    <!-- Include Bootstrap CSS from a CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS for the portfolio -->
+    <style>
+        /* Add custom styles here */
+        body {
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            overflow: hidden;
+            transition: 1.5s;
+        }
+        .profile-image {
+            max-width: 250px;
+            border-radius: 8%;
+            margin: 20px auto;
+            display: block;
+            overflow: hidden;
+            transition: 1.5s;
+        }
+        .profile-image:hover {
+           transform: scale(1.5);
+           box-shadow: 10px 12px 8px black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .skill-badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .skill-badge {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 20%; /* Initial width for the badges */
+            transition: width 0.5s; /* Smooth transition for width changes */
+        }
+        .skill-badge:hover {
+            width: 100%; /* Increase width to 100% on hover */
+        }
+        .navbar-nav .nav-item .nav-link {
+            transition: color 0.3s; /* Add smooth color transition */
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: red; /* Change color to red when hovered */
+        }
+
+        /* Custom styles for social media links */
+        .social-links .nav-item .nav-link {
+            color: #000; /* Set the color to black */
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 24px;">VISHU</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Add social media links to the left -->
+        <ul class="navbar-nav social-links mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=100011634708404">Facebook</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/vishalrajyaduvanshi59?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Email</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="PORTFOLIO.HTML">Portfolio</a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">My Gallery</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    
+
+    <!-- Header -->
+    <div class="header">
+        <img src="two.jpeg" alt="Vishal Raj" class="profile-image">
+        <h1>Vishal Raj</h1>
+        <p>Computer Engineering Student | Bihar</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Vishal Raj, a computer engineering student from Bihar. Coding is my passion, and I've chosen this field to explore my potential and learn new things. I also have a strong interest in editing and experimenting with new technologies.</p>
+
+            <h2>Skills</h2>
+            <!-- Skill badges with hover effect and dynamic width -->
+            <div class="skill-badge-container">
+                <div class="skill-badge" style="width: 70%;">C</div>
+                <div class="skill-badge" style="width: 75%;">Java</div>
+                <div class="skill-badge" style="width: 45%;">Python</div>
+                <div class="skill-badge" style="width: 50%;">Front-end</div>
+            </div>
+
+            <!-- Add more skills as needed -->
+            
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">MY FIRST PROJECT IS BUBBLE GAME HERE IS THE LINK <br><br> <a href="https://vishalrajyadav.github.io/Bubbles_game/">LINK</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">CURRENTLY   I AM WORKING ON A PROJECT RELATED TO STUDENT COMMIT SUICIDE,DAY BY DAY IT'S INCREASES
+                        THAT'S WHY I WANT TO SERVE SOMETHING RELATED TO STUDENTS......
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, please feel free to email me at <a href="vishalraj@gmail.com">vishalraj@gmail.com</a>.</p>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
